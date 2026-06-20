@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nikhitha Portfolio</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Nikhitha</div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+
+        <img src="{{ url_for('static', filename='images/profile.jpeg') }}"
+     class="profile-pic">
+
+<h1>Nikhitha Siddabattula</h1>
+
+<h2>Full Stack Developer & AI Enthusiast</h2>
+
+<p>
+Building scalable web applications and exploring AI technologies.
+</p>
+
+<div class="hero-buttons">
+
+    <a href="{{ url_for('static', filename='resume/resume.pdf') }}"
+   download
+   class="btn">
+
+    Download Resume
+
+    </a>
+
+    <a href="https://github.com/nikhitha2812"
+       target="_blank"
+       class="btn-secondary">
+
+       GitHub
+    </a>
+
+    <a href="https://www.linkedin.com/in/nikhitha-siddabattula-2244a62b5/"
+   target="_blank"
+   class="btn-secondary">
+
+        LinkedIn
+    </a>
+
+</div>
+    </div>
+
+    <section id="about" class="about">
+
+    <h2>About Me</h2>
+
+    <div class="about-card">
+
+        <p>
+            <p>
+Computer Science student passionate about Full Stack Development,
+Artificial Intelligence, and problem-solving.
+
+I enjoy building web applications, learning new technologies,
+and creating projects that solve real-world problems.
+
+Currently exploring Python, Flask, JavaScript, and AI-powered applications.
+</p>
+        </p>
+
+    </div>
+
+</section>
+
+    <section id="tech-stack">
+
+    <h2 class="section-title">Tech Stack</h2>
+
+    <div class="tech-grid">
+
+        <div class="tech-card">
+            <h3>Frontend</h3>
+            <p>HTML, CSS, JavaScript</p>
+        </div>
+
+        <div class="tech-card">
+            <h3>Backend</h3>
+            <p>Python, Flask</p>
+        </div>
+
+        <div class="tech-card">
+            <h3>Database</h3>
+            <p>SQLite, SQL</p>
+        </div>
+
+        <div class="tech-card">
+            <h3>Tools</h3>
+            <p>Git, GitHub, VS Code</p>
+        </div>
+
+    </div>
+
+</section>
+    <section id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">🐍 Python</div>
+        <div class="skill-card">🌐 HTML</div>
+        <div class="skill-card">🎨 CSS</div>
+
+        <div class="skill-card">⚡ JavaScript</div>
+        <div class="skill-card">🚀 Flask</div>
+        <div class="skill-card">🗄 SQL</div>
+
+    </div>
+</section>
+    <section id="projects">
+
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+
+            <h3>🌍 Multilingual PDF Simplifier</h3>
+
+            <p>
+                AI-powered application that converts complex PDF content
+                into simplified explanations in multiple languages and
+                provides audio narration using Text-to-Speech.
+            </p>
+
+            <div class="project-buttons">
+                <a href="https://multi-language-pdf-s-6lgx.bolt.host/" class="project-btn">
+                    View Project
+                </a>
+
+                <a href="https://github.com/nikhitha2812/pdf_simplifier_multilingual.git" class="project-btn">
+                    GitHub Repo
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+
+            <h3>🏫 College Management System</h3>
+
+            <p>
+                Web application for managing student records,
+                faculty details, attendance tracking, and
+                academic information efficiently.
+            </p>
+
+            <div class="project-buttons">
+                <a href="#" class="project-btn">
+                    View Project
+                </a>
+
+                <a href="#" class="project-btn">
+                    GitHub Repo
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+
+            <h3>🛒 E-Commerce Website</h3>
+
+            <p>
+                Online shopping platform with product listings,
+                cart management, user authentication, and
+                order processing functionality.
+            </p>
+
+            <div class="project-buttons">
+                <a href="#" class="project-btn">
+                    View Project
+                </a>
+
+                <a href="https://github.com/nikhitha2812/smartshop-e-commerce.git" class="project-btn">
+                    GitHub Repo
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <section id="experience" class="experience-section">
+    <h2>Experience</h2>
+
+    <div class="experience-container">
+
+        <div class="experience-content">
+            <span class="intern-badge">
+                AICTE Internship
+            </span>
+            <h3>Python Full Stack Developer Intern</h3>
+            <h4>EduSkills (AICTE Virtual Internship)</h4>
+            <p class="duration">January 2026 – March 2026 • 10 Weeks</p>
+            <div class="tech-tags">
+    <span>Python</span>
+    <span>Flask</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+</div>
+            <ul>
+                <li>✅Built web applications using Python and Flask.</li>
+                <li>✅Worked with HTML, CSS and JavaScript.</li>
+                <li>✅Learned database integration.</li>
+                <li>✅Implemented responsive user interfaces.</li>
+            </ul>
+        </div>
+
+        <div class="certificate-image">
+            <a href="{{ url_for('static', filename='images/internship_certificate.png') }}" target="_blank">
+    <img src="{{ url_for('static', filename='images/internship_certificate.png') }}" alt="Certificate">
+</a>
+        </div>
+
+    </div>
+</section>
+
+    <section id="certificates">
+
+    <h2 class="section-title">Certificates</h2>
+
+    <div class="certificates-grid">
+
+        <div class="certificate-card">
+            <div class="certificate-icon">🏆</div>
+            <h3>IBM Python for Data Science</h3>
+            <p>IBM SkillsBuild</p>
+            <a href="https://drive.google.com/file/d/1qZ3cPeetMoTxKWT9d_nY4DZdIpFyHOMO/view?usp=drive_link" class="certificate-btn">
+        View Certificate
+    </a>
+        </div>
+
+        <div class="certificate-card">
+    <div class="certificate-icon">☁️</div>
+    <h3>AWS Generative AI</h3>
+    <p>AWS Academy / AWS Educate</p>
+    <a href="https://drive.google.com/file/d/1czHFFCUxtIWstzO52AWLUkeboEitX_Jc/view?usp=drive_link" class="certificate-btn">
+        View Certificate
+    </a>
+    </div>
+
+        <div class="certificate-card">
+            <div class="certificate-icon">🌐</div>
+            <h3>CCNA 1</h3>
+            <p>Cisco Networking Academy</p>
+            <a href="https://drive.google.com/file/d/1yEn5TXV1O-zCxvsPfnqEoB0AiaWFI1C6/view?usp=drive_link" class="certificate-btn">
+        View Certificate
+    </a>
+        </div>
+
+        <div class="certificate-card">
+            <div class="certificate-icon">🌐</div>
+            <h3>CCNA 2</h3>
+            <p>Cisco Networking Academy</p>
+            <a href="https://drive.google.com/file/d/1DP8JVTvhvHMJoWVr9tZ-kTAzlgozxcMT/view?usp=drive_link" class="certificate-btn">
+        View Certificate
+            </a>
+        </div>
+
+    </div>
+
+</section>
+    <section id="contact" class="contact">
+
+    <h2>Contact Me</h2>
+
+    <p>Email:s.nikhitha@example.com</p>
+
+    <p>
+        GitHub:
+        <a href="https://github.com/nikhitha2812" target="_blank">
+            github.com/nikhitha2812
+        </a>
+    </p>
+
+    <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/nikhitha-siddabattula-2244a62b5/"
+           target="_blank">
+            LinkedIn Profile
+        </a>
+    </p>
+
+</section>
+</body>
+<footer>
+    <p>© 2026 Nikhitha Siddabattula. All Rights Reserved.</p>
+</footer>
+</html>
